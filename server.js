@@ -5,7 +5,6 @@ var notes;
 // set up express and server
 const app = express();
 const port = process.env.PORT || 4020;
-const mainDir = path.join(__dirname, "/public");
 
 app.use(express.static('public'));
 app.use(express.urlencoded({extended: true}));
